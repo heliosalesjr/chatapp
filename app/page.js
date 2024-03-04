@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <div className='hero min-h-screen bg-base-200'>
       <div className='hero-content text-center'>
@@ -18,3 +18,5 @@ export default function HomePage() {
     
   );
 }
+
+export default HomePage;

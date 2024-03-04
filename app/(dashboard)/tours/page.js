@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ToursPage() {
+const ToursPage = () => {
   return (
     <div>ToursPage</div>
   )
