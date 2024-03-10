@@ -28,3 +28,14 @@ export const generateChatResponse = async (chatMessages) => {
       
 
     }
+
+export const getExistingTour = async ({ city, country }) => {
+  return prisma.tour.findUnique({
+    where: {
+      city_country: {
+        city,
+        country,
+      },
+    },
+  });
+};
